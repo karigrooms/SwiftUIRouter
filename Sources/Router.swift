@@ -55,7 +55,7 @@ struct RelativeRouteEnvironment: EnvironmentKey {
 	static var defaultValue = "/"
 }
 
-extension EnvironmentValues {
+public extension EnvironmentValues {
 	var relativePath: String {
 		get { self[RelativeRouteEnvironment.self] }
 		set { self[RelativeRouteEnvironment.self] = newValue }
