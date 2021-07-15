@@ -46,14 +46,14 @@ public struct SwitchRoutes<Content: View>: View {
 }
 
 // MARK: - SwitchRoutes environment object.
-final class SwitchRoutesEnvironment: ObservableObject {
+public final class SwitchRoutesEnvironment: ObservableObject {
 	/// Tells `Route`s whether to they're enclosed in a `SwitchRoutes`.
 	let isActive: Bool
 	
 	/// Tells `Route`s they can ignore the content, as a `SwitchRoutes` has found a match.
 	var isResolved = false
 	
-	init(active: Bool = false) {
+	public init(active: Bool = false) {
 		isActive = active
 	}
 }
