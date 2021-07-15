@@ -26,7 +26,7 @@ public final class Navigator: ObservableObject {
 	let initialPath: String
 	let stackLimit: Int
 		
-	init(initialPath: String = "/", stackLimit: Int = 1_000) {
+	public init(initialPath: String = "/", stackLimit: Int = 1_000) {
 		self.initialPath = initialPath
 		self.historyStack = [initialPath]
 		self.stackLimit = stackLimit
